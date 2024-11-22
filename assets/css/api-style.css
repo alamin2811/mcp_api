@@ -4,6 +4,8 @@ body {
   font-size: 15px;
   font-style: normal;
   font-weight: 500;
+  font-weight: 400;
+  line-height: 200%;
 }
 body ::-webkit-scrollbar {
   width: 10px;
@@ -174,7 +176,7 @@ body ::-webkit-scrollbar-thumb {
 }
 .api-right {
   width: 75%;
-  padding-left: 40px;
+  padding: 0px 40px;
   background-color: #FFF;
 }
 
@@ -380,12 +382,6 @@ body ::-webkit-scrollbar-thumb {
 }
 .api-container-left p {
   margin-bottom: 30px;
-  color: #444;
-  font-family: Inter;
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 200%;
 }
 .api-container-right {
   max-width: 480px;
@@ -393,6 +389,10 @@ body ::-webkit-scrollbar-thumb {
   margin-right: auto;
   padding-left: 30px;
   padding-top: 25px;
+}
+
+.detail-desktop-show {
+  display: block;
 }
 
 .api-detail .detail-title {
@@ -439,7 +439,7 @@ body ::-webkit-scrollbar-thumb {
 .api-detail ul li {
   padding: 7px 0px;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   line-height: 200%;
   font-size: 15px;
@@ -456,7 +456,7 @@ body ::-webkit-scrollbar-thumb {
   font-family: "JetBrains Mono";
   font-weight: 500;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: flex-start;
   gap: 8px;
 }
@@ -470,6 +470,7 @@ body ::-webkit-scrollbar-thumb {
   padding: 0px 5px;
   border-radius: 5px;
   background: rgba(249, 66, 66, 0.2);
+  margin-top: 6px;
 }
 .api-detail .detail-bottom-btns {
   display: flex;
@@ -522,6 +523,9 @@ body ::-webkit-scrollbar-thumb {
   border-bottom: 2px solid transparent;
   max-width: -moz-min-content;
   max-width: min-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .tab.active {
@@ -737,3 +741,75 @@ pre {
 
 /* Parameters like CURLOPT_URL */
 /* Add more if needed */
+@media screen and (max-width: 1200px) {
+  .detail-for-desktop {
+    display: none;
+  }
+  .detail-for-mobile {
+    display: block;
+    width: 100%;
+  }
+  .api-container-left {
+    height: auto;
+    max-height: inherit;
+    padding-right: 0px;
+  }
+  .api-container {
+    flex-direction: column;
+  }
+  .api-container-right {
+    padding: 0px;
+    max-width: 100%;
+  }
+  .api-container-left {
+    max-width: 100%;
+  }
+  .api-detail {
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .api-bg {
+    background: #FFFFFF;
+  }
+  .api-right-content {
+    width: 100%;
+  }
+  .api-sidebar {
+    display: none;
+  }
+  .api-hader-right-inner .header-btns {
+    display: none;
+  }
+  .header-search-box {
+    margin-left: auto;
+  }
+  .api-header {
+    padding: 20px !important;
+  }
+  .api-content {
+    padding: 0px 20px;
+  }
+  .api-right {
+    padding: 0px;
+  }
+  .header-search-box {
+    max-width: 45px;
+  }
+  .header-search-box input {
+    display: none;
+  }
+  .header-search-box span {
+    display: none;
+  }
+  .api-header-left {
+    width: 80%;
+  }
+  .api-detail ul {
+    margin-bottom: 15px;
+  }
+  .api-header-left-inner {
+    margin-right: auto;
+    margin-left: 0;
+  }
+}

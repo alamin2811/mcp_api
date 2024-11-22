@@ -45,7 +45,7 @@
     </div>
     <div class="api-body-content">
         <div class="api-content">
-            <div class="api-left">
+            <div class="api-left api-sidebar">
                 <div class="api-left-inner">
                     <div class="sudemenu">
                         <a href="#" class="active">API Reference</a>
@@ -78,7 +78,7 @@
                     </div>
                 </div>
             </div>
-            <div class="api-right">
+            <div class="api-right api-right-content">
                 <div class="api-right-inner">
                     <div class="api-container">
                         <div class="api-container-left">
@@ -96,64 +96,66 @@
                                 are required fields. Also from field is an optional field.</p>
                             <p>Please make sure to send the token you have received from /get-token API
                                 as Authorization Bearer Token in API request headers.</p>
-                            <div class="api-detail">
-                                <div class="detail-title">
-                                    <h3>AUTHORIZATION</h3>
-                                    <span>Bearer Token</span>
+                            <div class="detail-for-desktop">
+                                <div class="api-detail">
+                                    <div class="detail-title">
+                                        <h3>AUTHORIZATION</h3>
+                                        <span>Bearer Token</span>
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            <div class="left">Token</div>
+                                            <div class="right">&lt;token&gt;</div>
+                                        </li>
+                                    </ul>
                                 </div>
-                                <ul>
-                                    <li>
-                                        <div class="left">Token</div>
-                                        <div class="right">&lt;token&gt;</div>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="api-detail">
-                                <div class="detail-title">
-                                    <h3>HEADERS</h3>
+                                <div class="api-detail">
+                                    <div class="detail-title">
+                                        <h3>HEADERS</h3>
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            <div class="left">Accept</div>
+                                            <div class="right">application/json</div>
+                                        </li>
+                                    </ul>
                                 </div>
-                                <ul>
-                                    <li>
-                                        <div class="left">Accept</div>
-                                        <div class="right">application/json</div>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="api-detail">
-                                <div class="detail-title">
-                                    <h3>BODY</h3>
-                                    <span>urlencoded</span>
+                                <div class="api-detail">
+                                    <div class="detail-title">
+                                        <h3>BODY</h3>
+                                        <span>urlencoded</span>
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            <div class="left">api_secret</div>
+                                            <div class="right">pbahmifqnpjxd6h <span>required</span></div>
+                                        </li>
+                                        <li>
+                                            <div class="left">phonenumber</div>
+                                            <div class="right">0525309310 <span>required</span></div>
+                                        </li>
+                                        <li>
+                                            <div class="left">phonenumber</div>
+                                            <div class="right">this is my test message <span>required</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="left">from</div>
+                                            <div class="right">test user <span>required</span></div>
+                                        </li>
+                                    </ul>
                                 </div>
-                                <ul>
-                                    <li>
-                                        <div class="left">api_secret</div>
-                                        <div class="right">pbahmifqnpjxd6h <span>required</span></div>
-                                    </li>
-                                    <li>
-                                        <div class="left">phonenumber</div>
-                                        <div class="right">0525309310 <span>required</span></div>
-                                    </li>
-                                    <li>
-                                        <div class="left">phonenumber</div>
-                                        <div class="right">this is my test message <span>required</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="left">from</div>
-                                        <div class="right">test user <span>required</span></div>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="api-detail">
-                                <div class="detail-title">
-                                    <h4><img src="./assets/images/icons/clock.svg" alt="icon"> Updated
-                                        11 months ago</h4>
-                                </div>
-                                <div class="detail-bottom-btns">
-                                    <a href="#"><img src="./assets/images/icons/left-arrow.svg" alt="icon"> Get
-                                        Token</a>
-                                    <a href="#">Get Token <img src="./assets/images/icons/right-arrow.svg" alt="icon">
-                                    </a>
+                                <div class="api-detail">
+                                    <div class="detail-title">
+                                        <h4><img src="./assets/images/icons/clock.svg" alt="icon"> Updated
+                                            11 months ago</h4>
+                                    </div>
+                                    <div class="detail-bottom-btns">
+                                        <a href="#"><img src="./assets/images/icons/left-arrow.svg" alt="icon"> Get
+                                            Token</a>
+                                        <a href="#">Get Token <img src="./assets/images/icons/right-arrow.svg" alt="icon">
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -355,6 +357,69 @@
                                                     alt=""></span>
                                         </div>
                                     </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="detail-for-mobile">
+                            <div class="api-detail">
+                                <div class="detail-title">
+                                    <h3>AUTHORIZATION</h3>
+                                    <span>Bearer Token</span>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <div class="left">Token</div>
+                                        <div class="right">&lt;token&gt;</div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="api-detail">
+                                <div class="detail-title">
+                                    <h3>HEADERS</h3>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <div class="left">Accept</div>
+                                        <div class="right">application/json</div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="api-detail">
+                                <div class="detail-title">
+                                    <h3>BODY</h3>
+                                    <span>urlencoded</span>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <div class="left">api_secret</div>
+                                        <div class="right">pbahmifqnpjxd6h <span>required</span></div>
+                                    </li>
+                                    <li>
+                                        <div class="left">phonenumber</div>
+                                        <div class="right">0525309310 <span>required</span></div>
+                                    </li>
+                                    <li>
+                                        <div class="left">phonenumber</div>
+                                        <div class="right">this is my test message <span>required</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="left">from</div>
+                                        <div class="right">test user <span>required</span></div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="api-detail">
+                                <div class="detail-title">
+                                    <h4><img src="./assets/images/icons/clock.svg" alt="icon"> Updated
+                                        11 months ago</h4>
+                                </div>
+                                <div class="detail-bottom-btns">
+                                    <a href="#"><img src="./assets/images/icons/left-arrow.svg" alt="icon"> Get
+                                        Token</a>
+                                    <a href="#">Get Token <img src="./assets/images/icons/right-arrow.svg" alt="icon">
+                                    </a>
                                 </div>
                             </div>
                         </div>
